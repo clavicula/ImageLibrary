@@ -12,6 +12,13 @@ echo on
 call vcvars32.bat
 
 nmake /f Makefile.vc clean
-nmake /f Makefile.vc
+
+@echo off
+echo.
+echo.
+echo.
+echo ビルド中です。しばらくお待ちください。
+
+nmake /f Makefile.vc > libtiff_build.log
 
 pause
